@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <!-- Ícono para pantalla de inicio en iOS -->
+    <link rel="apple-touch-icon" href="favicon.ico">
+    <!-- Configuración para que se vea como app fullscreen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="DeutschlnadCard">
+    <title>Deutschlandticket Ticket</title>
 </head>
 <style>
     @font-face {
@@ -143,6 +150,8 @@
         text-align: center;
         text-decoration: none;
         color: black;
+        pointer-events: none; /* Si quieres que no sea clickeable */
+        cursor: default;
     }
     .linea {
         border: none;              /* Quita el borde predeterminado */
